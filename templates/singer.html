@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/static/common.css">
+    <script type="text/javascript" src="/static/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/static/more-infos.js"></script>
+</head>
+<body class="sbody">
+{% include 'tpage.html' %}
+<div class="list">
+    {% for singer in singers %}
+        <div class="list-warp">
+            <div style="text-align: center">
+                <a href="/singer/detail-{{ singer.id }}" target="_blank">
+                    <img src="/static/images/{{ singer.name }}.jpg" title="{{ singer.name }}" width="200" height="200">
+                </a>
+            </div>
+            <div style="text-align: center">
+                {{ singer.name }}
+            </div>
+        </div>
+    {% endfor %}
+</div>
+<script>
+    $("#" + location.pathname[10]).addClass("cur");
+</script>
+</body>
+</html>

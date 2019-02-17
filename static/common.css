@@ -1,0 +1,91 @@
+.hbody {
+    background: url("/static/banner.jpg") no-repeat -400px 50px;
+    margin: 0;
+}
+
+.sbody {
+    margin: 0;
+}
+
+.tpage {
+    background-color: black;
+    height: 50px;
+}
+
+.menu {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: whitesmoke;
+    line-height: 50px;
+    font-size: 25px;
+    padding-left: 50px;
+    float: left;
+}
+
+.category {
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: whitesmoke;
+    float: left;
+    width: 150px;
+}
+
+.cur {
+    background-color: #217fbc;
+}
+
+.category:hover {
+    background-color: #217fbc;
+}
+
+.link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.list {
+    margin-top: 20px;
+}
+
+.list-warp {
+    width: 260px;
+    height: 260px;
+    float: left;
+}
+.list-head{
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+}
+.left-detail{
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+.right-detail{
+    width: 70%;
+    float: left;
+}
+.song-list{
+    border: 1px solid #cccccc;
+    box-shadow: 0 3px 3px #eaedef;
+}
+.hand {
+    cursor: pointer;
+    display: inline-block;
+    width: 40%;
+    color: #217fbc;
+}
+
+.pan{
+    display: none;
+    height: 30px;
+    line-height: 30px
+}
+.ie-bk{
+    display: inline-block;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/static/common.css">
+    <script type="text/javascript" src="/static/jquery-3.3.1.min.js"></script>
+</head>
+<body class="sbody">
+{% include 'tpage.html' %}
+<div style="margin-top: 30px">
+    <div class="left-detail">
+        <img src="/static/images/{{ info.singer.name }}.jpg" title="{{ info.singer.name }}" width="300" height="300">
+        <div style="text-align: center;font-size: 30px;">{{ info.singer.name }}</div>
+    </div>
+    <div class="right-detail">
+        <div class="list-head"> 无损歌曲列表</div>
+        <br/>
+        {% for link in info.links %}
+            <div class="song-list">
+                <span class="ie-bk" style="width: 30%">{{ link.song }}</span>
+                <span class="ie-bk" style="width: 20%">{{ link.size }}</span>
+                <span class="hand">下载</span>
+                <div class="pan">网盘地址：{{ link.link }}</div>
+            </div>
+        {% endfor %}
+    </div>
+    <div style="clear: both"></div>
+</div>
+<script>
+    $(document).ready(function () {
+        $(".hand").click(function () {
+            $(this).next().toggle(500);
+        });
+    });
+</script>
+</body>
+</html>
